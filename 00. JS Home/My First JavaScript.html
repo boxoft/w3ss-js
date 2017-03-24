@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="w3schools.com JavaScript">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>My First JavaScript</title>
+
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="w3-container">
+
+<h1>My First JavaScript</h1>
+
+<button id="now" class="w3-button w3-red">现在的日期和时间</button>
+
+<div class="w3-panel w3-info intro">
+    <p>JavaScript is the programming language of HTML and the Web.</p>
+</div>
+
+<div class="w3-panel w3-note">
+    <h3>Did You Know?</h3>
+
+    <p>
+        JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+        ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+    </p>
+</div>
+
+<script>
+    window.document.getElementById('now').addEventListener('click', function () {
+        this.textContent = new Date()
+    })
+</script>
+
+</body>
+</html>
