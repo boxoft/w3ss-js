@@ -11,3 +11,7 @@
 .min {
     min-height: 1px;
 }
+
+#bulb {
+    cursor: pointer;
+}
