@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Can Change HTML Styles (CSS)</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="w3-container">
+
+<div class="w3-col l2 m1 min"></div>
+
+<div class="w3-col l8 m10">
+    <h1>JavaScript Introduction</h1>
+
+    <h3>JavaScript Can Change HTML Styles (CSS)</h3>
+
+    <p>
+        <button class="w3-button w3-margin-top">改变颜色</button>
+    </p>
+</div>
+
+<div class="w3-col l2 m1"></div>
+
+<script>
+    (function () {
+        var button = document.getElementsByClassName('w3-button')[0],
+            buttonInitialClass = button.className,
+            w3Colors = ['w3-red', 'w3-pink', 'w3-orange', 'w3-yellow'],
+            i = 0;
+
+        setColor();
+
+        button.addEventListener('click', setColor);
+
+        function setColor() {
+            button.className = buttonInitialClass + ' ' + w3Colors[i];
+
+            i >= 3 ? i = 0 : i++;
+        }
+    })();
+</script>
+
+</body>
+</html>
