@@ -16,27 +16,45 @@
     <h3>JavaScript Can Change HTML Styles (CSS)</h3>
 
     <p>
-        <button class="w3-button w3-margin-top">改变颜色</button>
+        <button class="w3-button w3-red">改变按钮下方注释区域的背景颜色</button>
     </p>
+
+    <div class="w3-panel w3-note">
+        <h3>Did You Know?</h3>
+
+        <p>
+            The name <code class="w3-codespan">className</code> is used for this property instead of <code class="w3-codespan">class</code> because of conflicts with the "class" keyword in many languages which are used to manipulate the DOM.
+        </p>
+
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/className" target="_blank">Element.className - Web APIs | MDN</a>
+        </p>
+    </div>
 </div>
 
 <div class="w3-col l2 m1"></div>
 
 <script>
     (function () {
-        var button = document.getElementsByClassName('w3-button')[0],
-            buttonInitialClass = button.className,
+        var button = document.getElementsByTagName('button')[0],
+            noteArea = document.getElementsByClassName('w3-note')[0],
+            noteAreaInitialClass = noteArea.className,
             w3Colors = ['w3-red', 'w3-pink', 'w3-orange', 'w3-yellow'],
             i = 0;
 
-        setColor();
+        //setColor();
 
         button.addEventListener('click', setColor);
 
         function setColor() {
-            button.className = buttonInitialClass + ' ' + w3Colors[i];
+            noteArea.className = noteAreaInitialClass + ' ' + w3Colors[i];
 
-            i >= 3 ? i = 0 : i++;
+            if (i === w3Colors.length) {
+                noteArea.className = noteAreaInitialClass;
+                i = 0;
+            } else {
+                i++;
+            }
         }
     })();
 </script>
