@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Can Change HTML Styles (CSS)</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="w3-container">
+
+<div class="w3-col l2 m1 min"></div>
+
+<div class="w3-col l8 m10">
+    <h1>JavaScript Introduction</h1>
+
+    <h3>JavaScript Can Change HTML Styles (CSS)</h3>
+
+    <p>
+        <button class="w3-button w3-red">改变按钮上方标题的字体大小</button>
+    </p>
+
+    <div class="w3-panel w3-note">
+        <h3>Did You Know?</h3>
+
+        <p>
+            The <code class="w3-codespan">style</code> property is not useful for learning about the element's style in general, since it represents only the CSS declarations set in the element's inline style attribute, not those that come from style rules elsewhere, such as style rules in the <code class="w3-codespan">&lt;head&gt;</code> section, or external style sheets. To get the values of all CSS properties for an element you should use <code class="w3-codespan">window.getComputedStyle()</code> instead.
+        </p>
+
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style" target="_blank">HTMLElement.style - Web APIs | MDN</a>
+        </p>
+    </div>
+</div>
+
+<div class="w3-col l2 m1"></div>
+
+<script src="js/style.js"></script>
+
+</body>
+</html>
