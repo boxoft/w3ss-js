@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Arithmetic</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="w3-container">
+
+<div class="w3-col l2 m1 min"></div>
+
+<div class="w3-col l8 m10">
+    <h1>JavaScript Arithmetic</h1>
+
+    <h3>JavaScript Arithmetic Operators</h3>
+
+    <div class="w3-panel w3-info">
+        <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
+
+        <table class="w3-table-all notranslate">
+            <tbody>
+            <tr>
+                <th style="width:25%">Operator</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Addition</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Division</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus</td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>Increment</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Decrement</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Operators and Operands</h3>
+
+    <div class="w3-panel w3-info">
+        <p>The numbers (in an arithmetic operation) are called <strong>operands</strong>.</p>
+        <p>The operation (to be performed between the two operands) is defined by an <strong>operator</strong>.</p>
+        <table class="w3-table-all" style="width: 50%">
+            <tbody>
+            <tr>
+                <th>Operand</th>
+                <th>Operator</th>
+                <th>Operand</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>+</td>
+                <td>50</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>JavaScript Operator Precedence Values</h3>
+
+    <div class="w3-panel w3-info">
+        <table class="w3-table-all">
+            <tbody>
+            <tr>
+                <th style="width:10%">Value</th>
+                <th style="width:15%">Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>( )</td>
+                <td>Expression grouping</td>
+                <td>(3 + 4)</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>.</td>
+                <td>Member</td>
+                <td>person.name</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>[]</td>
+                <td>Member</td>
+                <td>person["name"]</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>()</td>
+                <td>Function call</td>
+                <td>myFunction()</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>new</td>
+                <td>Create</td>
+                <td>new Date()</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>++</td>
+                <td>Postfix Increment</td>
+                <td>i++</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>--</td>
+                <td>Postfix Decrement</td>
+                <td>i--</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>++</td>
+                <td>Prefix Increment</td>
+                <td>++i</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>--</td>
+                <td>Prefix Decrement</td>
+                <td>--i</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>!</td>
+                <td>Logical not</td>
+                <td>!(x==y)</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>typeof</td>
+                <td>Type</td>
+                <td>typeof x</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>10 * 5</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>/</td>
+                <td>Division</td>
+                <td>10 / 5</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>%</td>
+                <td>Modulo division</td>
+                <td>10 % 5</td>
+            </tr>
+            <tr class="w3-pale-red">
+                <td>14</td>
+                <td>**</td>
+                <td>Exponentiation</td>
+                <td>10 ** 2</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>+</td>
+                <td>Addition</td>
+                <td>10 + 5</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>-</td>
+                <td>Subtraction</td>
+                <td>10 - 5</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>&lt;&lt;</td>
+                <td>Shift left</td>
+                <td>x &lt;&lt; 2</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>&gt;&gt;</td>
+                <td>Shift right</td>
+                <td>x &gt;&gt; 2</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>&gt;&gt;&gt;</td>
+                <td>Shift right (unsigned)</td>
+                <td>x &gt;&gt;&gt; 2</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&lt;</td>
+                <td>Less than</td>
+                <td>x &lt; y&nbsp;</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&lt;=</td>
+                <td>Less than or equal</td>
+                <td>x &lt;= y</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&gt;</td>
+                <td>Greater than</td>
+                <td>x &gt; y</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&gt;=</td>
+                <td>Greater than or equal</td>
+                <td>x &gt;= y</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>==</td>
+                <td>Equal</td>
+                <td>x == y</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>===</td>
+                <td>Strict equal</td>
+                <td>x === y</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>!=</td>
+                <td>Unequal</td>
+                <td>x != y</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>!==</td>
+                <td>Strict unequal</td>
+                <td>x !== y</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>&amp;&amp;</td>
+                <td>Logical and</td>
+                <td>x &amp;&amp; y</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>||</td>
+                <td>Logical or</td>
+                <td>x || y</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Assignment</td>
+                <td>x = y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>+=</td>
+                <td>Assignment</td>
+                <td>x += y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>-=</td>
+                <td>Assignment</td>
+                <td>x -= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>*=</td>
+                <td>Assignment</td>
+                <td>x *= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>%=</td>
+                <td>Assignment</td>
+                <td>x %= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>&lt;&lt;=</td>
+                <td>Assignment</td>
+                <td>x &lt;&lt;= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>&gt;&gt;=</td>
+                <td>Assignment</td>
+                <td>x &gt;&gt;= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>&gt;&gt;&gt;=</td>
+                <td>Assignment</td>
+                <td>x &gt;&gt;&gt;= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>&amp;=</td>
+                <td>Assignment</td>
+                <td>x &amp;= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>^=</td>
+                <td>Assignment</td>
+                <td>x ^= y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>|=</td>
+                <td>Assignment</td>
+                <td>x |= y</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="w3-panel w3-warning">
+        <p>Pale red entries indicates experimental or proposed technology (ECMAScript 2016 or ES7)</p>
+    </div>
+
+    <div class="w3-panel w3-note">
+        <p>Expressions in parentheses are fully computed before the value is used in the rest of the expression.</p>
+    </div>
+</div>
+
+<div class="w3-col l2 m1"></div>
+
+</body>
+</html>

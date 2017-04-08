@@ -8,6 +8,11 @@
     border-left: 6px solid #ffeb3b;
 }
 
+.w3-warning {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+}
+
 .min {
     min-height: 1px;
 }
